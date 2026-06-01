@@ -7,7 +7,7 @@
   "long_description": "Wolfgang Rush — District Court Drafting is a local-execution MCPB Desktop Extension for trial-court drafting work across Indian District Courts. The connector exposes the six-agent drafting pipeline (Reader, Format, Drafter, Verifier, Refiner, Overseer), ten case-type templates spanning civil and criminal practice, and sixteen State exemplars (Maharashtra, Karnataka, Tamil Nadu, Delhi, Gujarat, Kerala, West Bengal, UP+Uttarakhand, MP+Chhattisgarh, Bihar+Jharkhand, Punjab+Haryana+Chandigarh, Rajasthan, Odisha, AP+Telangana, J&K+Ladakh, NE States) for State-specific Civil Manual conventions and Court-Fees Act compliance. Output is rendered as filing-grade .docx via pandoc. All processing happens on the user's machine. The publisher receives no user data.",
   "author": {
     "name": "Wolfgang Rush",
-    "email": "advrushikeshravindramahajan@gmail.com",
+    "email": "wolfgangrush@gmail.com",
     "url": "https://wolfgangrush.github.io"
   },
   "homepage": "https://wolfgangrush.github.io",

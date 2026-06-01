@@ -26,7 +26,7 @@ This file is referenced from every drafting skill in the `district-court-draftin
    - Enforcement recommendations: `allowed-tools:` whitelist excludes destructive Bash patterns; user-side hooks block destructive operations on case-folder paths
 
 6.1. **🔴 WORKING-COPY RULE — never operate on originals.**
-   Conversion / extraction / transformation of any existing case file is performed only on a copy under `~/.claude/working-copies/<case-name>/`. The original file is never opened-for-write.
+   Conversion / extraction / transformation of any existing case file is performed only on a copy under `<case-folder>/_working-copies/<case-name>/`. The original file is never opened-for-write.
 
 ## LOCKED CONSTRAINTS (District Court AI-use risk)
 

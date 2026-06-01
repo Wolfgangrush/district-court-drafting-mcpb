@@ -112,7 +112,7 @@ State: <user-supplied from case folder CLAUDE.md or format-from-user.md Section 
 
 1. **Glob** the case folder. Skip `~$*` lock files, skip prior agent outputs.
 
-2. **For each input document:** create a working copy under `~/.claude/working-copies/`, convert / extract text (textutil for .docx, pdftotext for .pdf), identify document type by content cues (PLAINT / WRITTEN STATEMENT / FIR / AGREEMENT TO SELL / SALE DEED / LEGAL NOTICE / etc.), extract parties / dates / sections / citations / property details, append to audit log.
+2. **For each input document:** create a working copy under `<case-folder>/_working-copies/`, convert / extract text (textutil for .docx, pdftotext for .pdf), identify document type by content cues (PLAINT / WRITTEN STATEMENT / FIR / AGREEMENT TO SELL / SALE DEED / LEGAL NOTICE / etc.), extract parties / dates / sections / citations / property details, append to audit log.
 
 3. **Exhibit mapping (District convention — EXHIBIT A / B / C):** assign in the order conventional for the case type per the case-type SKILL.md's `typical_exhibit_order:` block. Convention is overridable to `ANNEXURE-A` via `format-from-user.md` per State practice.
 
