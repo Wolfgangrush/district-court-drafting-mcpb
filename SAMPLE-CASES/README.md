@@ -65,3 +65,18 @@ All party names are placeholders. No real client data appears here.
 - The `save_draft_as_docx` tool requires `pandoc` to be installed on the user's machine.
 - The connector applies a three-layer privacy firewall throughout — no real party names need ever be sent to Claude in identifiable form.
 - The 16 State exemplars are bundled in `state-config/exemplars/` — invoking `list_states()` returns the available identifiers.
+
+---
+
+## Synthetic case folder for Anthropic reviewer
+
+A fully-fictional, AAAK-pseudonymised case folder is bundled at:
+
+`SAMPLE-CASES/synthetic-specific-relief-suit-pune/`
+
+It contains 3 source documents (.docx) plus a `case-facts-background.md` narrative.
+
+**To exercise the pipeline end-to-end**, point `read_case_folder(path)` at this folder and follow the orchestration script returned by `get_agent_instructions()`. The Reader stage will extract facts, the Format stage will load the case-type SKILL.md template, and the remaining four agents (Drafter → Verifier → Refiner → Overseer) will produce `final-draft.docx`.
+
+All identifiers in the bundled documents are structural placeholders. The Pseudonymisation Gateway is therefore exercising against pre-pseudonymised content; reviewers seeking to test re-substitution may replace placeholders with their own fictional values before invoking the pipeline.
+
