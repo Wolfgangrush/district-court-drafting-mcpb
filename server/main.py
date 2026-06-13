@@ -1,4 +1,4 @@
-"""Wolfgang Rush — District Court Drafting MCPB.
+"""wolfgang_rush — District Court Drafting MCPB.
 
 Local-execution MCPB Desktop Extension for District Courts across India.
 Exposes the six-agent District drafting pipeline, ten case-type drafting
@@ -6,7 +6,7 @@ templates (civil + criminal), and sixteen State exemplars as MCP tools that
 Claude can orchestrate from a Claude Desktop chat.
 
 Privacy posture: zero data collection. All processing happens on the user's
-machine. The publisher (Wolfgang Rush) never receives any user data.
+machine. The publisher (wolfgang_rush) never receives any user data.
 
 License: MIT
 Source: https://github.com/Wolfgangrush/district-court-drafting-mcpb
@@ -102,7 +102,7 @@ ACRONYM_TO_CASE_TYPE: dict[str, str] = {
 }
 
 
-FULL_ORCHESTRATION_SCRIPT = """# WOLFGANG RUSH — INDIAN DISTRICT COURTS (SESSIONS / CIVIL JUDGE / MAGISTRATE) DRAFTING · FULL ORCHESTRATION SCRIPT
+FULL_ORCHESTRATION_SCRIPT = """# wolfgang_rush — INDIAN DISTRICT COURTS (SESSIONS / CIVIL JUDGE / MAGISTRATE) DRAFTING · FULL ORCHESTRATION SCRIPT
 
 **YOU MUST execute every step below in order. DO NOT skip steps. DO NOT write
 standalone python-docx, JavaScript, or shell scripts to generate output —
@@ -561,7 +561,7 @@ def create_case_folder(case_type: str, base_dir: str = "") -> dict:
     inputs_folder.mkdir(parents=True, exist_ok=True)
     readme = case_folder / "README.md"
     readme.write_text(
-        f"# Wolfgang Rush Drafting Case Folder\n\n"
+        f"# wolfgang_rush Drafting Case Folder\n\n"
         f"- Case type: {case_type}\n"
         f"- Created: {datetime.now().isoformat(timespec='seconds')}\n\n"
         f"## Artifacts (pipeline output)\n"
